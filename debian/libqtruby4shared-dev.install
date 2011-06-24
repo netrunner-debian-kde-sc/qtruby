@@ -1,0 +1,3 @@
+usr/include/qtruby/*.h
+usr/lib/libqtruby4shared.so
+usr/share/qtruby4/cmake/*.cmake

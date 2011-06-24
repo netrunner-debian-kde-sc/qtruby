@@ -1,0 +1,3 @@
+usr/lib/ruby/1.8/Qt*.rb
+usr/lib/ruby/1.8/*/qtruby4.so
+usr/lib/ruby/1.8/Qt/*.rb
