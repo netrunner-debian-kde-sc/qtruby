@@ -6,8 +6,8 @@ Build-Depends: debhelper (>= 7.4.10), pkg-kde-tools (>= 0.6.8), cmake,
  smoke-dev-tools, libsmokeqt4-dev, ruby1.8-dev, libqt4-dev
 Standards-Version: 3.9.2
 Homepage: http://projects.kde.org/projects/kde/kdebindings/ruby/qtruby
-#Vcs-Git: git://git.debian.org/collab-maint/qtruby.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/qtruby.git;a=summary
+Vcs-Git: git://git.debian.org/git/pkg-kde/kde-sc/qtruby.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/qtruby.git;a=summary
 
 Package: libqtruby4shared2
 Section: libs
