@@ -1,9 +1,7 @@
 Install to /usr not /usr/local
-Index: b/CMakeLists.txt
-===================================================================
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -31,8 +31,8 @@
+@@ -31,8 +31,8 @@ if (NOT COMPILE_RUBY)
      return()
  endif (NOT COMPILE_RUBY)
  
