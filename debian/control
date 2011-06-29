@@ -110,14 +110,14 @@ Description: QWt5 bindings for the Ruby language
 #Transitional packages: http://wiki.debian.org/Teams/Ruby/RubyInWheezy
 Package: libqt4-ruby
 Architecture: all
-Depends: ruby-qt4
+Depends: ${misc:Depends}, ruby-qt4
 Description: transitional package for ruby-qt4
  This is a transitional package to ease upgrades to the ruby-qt4 package.
  It can safely be removed.
 
 Package: libqt4-ruby1.8
 Architecture: all
-Depends: ruby-qt4
+Depends: ${misc:Depends}, ruby-qt4
 Description: transitional package for ruby-qt4
  This is a transitional package to ease upgrades to the ruby-qt4 package.
  It can safely be removed.
