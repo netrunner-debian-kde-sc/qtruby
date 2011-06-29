@@ -1,9 +1,11 @@
 Source: qtruby
 Section: ruby
 Priority: optional
-Maintainer: David Palacio <dpalacio@orbitalibre.org>
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Torsten Marek <shlomme@debian.org>, Sune Vuorela <sune@debian.org>, David Palacio <dpalacio@orbitalibre.org>, Modestas Vainius <modax@debian.org>, Michael Meskes <meskes@debian.org>
 Build-Depends: debhelper (>= 7.4.10), pkg-kde-tools (>= 0.6.8), cmake,
- smoke-dev-tools, libsmokeqt4-dev, ruby1.8-dev, libqt4-dev
+ smoke-dev-tools, libsmokeqt4-dev, ruby1.8, ruby1.8-dev, libqt4-dev,
+ libqtwebkit-dev, libqwt5-qt4-dev, libphonon-dev, libqscintilla2-dev
 Standards-Version: 3.9.2
 Homepage: http://projects.kde.org/projects/kde/kdebindings/ruby/qtruby
 Vcs-Git: git://git.debian.org/git/pkg-kde/kde-sc/qtruby.git
@@ -19,7 +21,7 @@ Description: Qt4 Ruby bindings
 Package: libqtruby4shared-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${so:Depends}, ${misc:Depends}
 Description: Qt4 Ruby bindings
  moduledescreplace
 
@@ -32,6 +34,7 @@ Description: Qt4 Ruby bindings
 Package: ruby-qt4
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: ruby1.8
 Provides: libqt4-ruby, libqt4-ruby1.8
 Replaces: libqt4-ruby, libqt4-ruby1.8
 Breaks: libqt4-ruby, libqt4-ruby1.8
@@ -45,18 +48,10 @@ Description: Qt4 Ruby bindings
  moduledescreplace
 
 Package: ruby-qt4-dbg
+Priority: extra
+Section: debug
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Replaces: libqt4-ruby, libqt4-ruby1.8
-Breaks: libqt4-ruby, libqt4-ruby1.8
-Description: Qt4 Ruby bindings
- moduledescreplace
-
-Package: ruby-qt4-dev
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Replaces: libqt4-ruby, libqt4-ruby1.8
-Breaks: libqt4-ruby, libqt4-ruby1.8
+Depends: ruby-qt4 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: Qt4 Ruby bindings
  moduledescreplace
 
@@ -108,13 +103,13 @@ Description: Qt4 Ruby bindings
 
 #Transitional packages: http://wiki.debian.org/Teams/Ruby/RubyInWheezy
 Package: libqt4-ruby
-Architecture: any
+Architecture: all
 Depends: ruby-qt4
 Description: Transitional dummy package for libqt4-ruby
  The KDE community creates tools and applications for the modern desktop. This package lets developers use these tools with the Ruby language.
 
 Package: libqt4-ruby1.8
-Architecture: any
+Architecture: all
 Depends: ruby-qt4
 Description: Transitional dummy package for libqt4-ruby1.8
  The KDE community creates tools and applications for the modern desktop. This package lets developers use these tools with the Ruby language.

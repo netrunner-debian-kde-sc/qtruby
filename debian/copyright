@@ -3,16 +3,74 @@ Upstream-Name: qtruby
 Source: http://projects.kde.org/projects/kde/kdebindings/ruby/qtruby
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
-License: <special license>
- <Put the license of the package here indented by 1 space>
- <This follows the format of Description: lines in control file>
+Copyright: 2003-2008 Richard Dale <richard.j.dale@gmail.com>
+           
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
  .
- <Including paragraphs>
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-# If you want to use GPL v2 or later for the /debian/* files use 
-# the following clauses, or change it to suit. Delete these two lines
+Files: tools/* examples/*
+Copyright: 1992-2008 Trolltech ASA
+License: GPL-2+
+ This file may be used under the terms of the GNU General Public
+ License versions 2.0 or 3.0 as published by the Free Software
+ Foundation and appearing in the files LICENSE.GPL2 and LICENSE.GPL3
+ included in the packaging of this file.  Alternatively you may (at
+ your option) use any later version of the GNU General Public
+ License if such license has been publicly approved by Trolltech ASA
+ (or its successors, if any) and the KDE Free Qt Foundation. In
+ addition, as a special exception, Trolltech gives you certain
+ additional rights. These rights are described in the Trolltech GPL
+ Exception version 1.2, which can be found at
+ http://www.trolltech.com/products/qt/gplexception/ and in the file
+ GPL_EXCEPTION.txt in this package.
+ .
+ Please review the following information to ensure GNU General
+ Public Licensing requirements will be met:
+ http://trolltech.com/products/qt/licenses/licensing/opensource/. If
+ you are unsure which license is appropriate for your use, please
+ review the following information:
+ http://trolltech.com/products/qt/licenses/licensing/licensingoverview
+ or contact the sales department at sales@trolltech.com.
+ .
+ In addition, as a special exception, Trolltech, as the sole
+ copyright holder for Qt Designer, grants users of the Qt/Eclipse
+ Integration plug-in the right for the Qt/Eclipse Integration to
+ link to functionality provided by Qt Designer and its related
+ libraries.
+ .
+ This file is provided "AS IS" with NO WARRANTY OF ANY KIND,
+ INCLUDING THE WARRANTIES OF DESIGN, MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE. Trolltech reserves all rights not expressly
+ granted herein.
+ .
+ This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+ WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+
+Files: examples/ruboids/*
+Copyright: 2001 Jim Menard <jimm@io.com>
+License:
+ Released under the same license as Ruby. See
+ http://www.ruby-lang.org/en/LICENSE.txt.
+
+
 Files: debian/*
 Copyright: 2008-2011 Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
            2011 David Palacio <dpalacio@orbitalibre.org>
@@ -33,5 +91,3 @@ License: GPL-2+
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-# Please also look if there are files or directories which have a
-# different copyright/license attached and list them here.
