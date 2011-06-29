@@ -15,8 +15,8 @@ Package: libqtruby4shared2
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: internal library for Qt 4 Ruby bindings
+ This is an internal library of Qt Ruby.
 
 Package: libqtruby4shared-dev
 Section: libdevel
@@ -28,8 +28,8 @@ Description: Qt4 Ruby bindings
 Package: ruby-qscintilla2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: QScintilla2 bindings for the Ruby language
+ This package provides the Ruby bindings for the QScintilla2 library.
 
 Package: ruby-qt4
 Architecture: any
@@ -38,79 +38,85 @@ Recommends: ruby1.8
 Provides: libqt4-ruby, libqt4-ruby1.8
 Replaces: libqt4-ruby, libqt4-ruby1.8
 Breaks: libqt4-ruby, libqt4-ruby1.8
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: Qt 4 bindings for the Ruby language
+ This package provides the Ruby bindings for some of the Qt 4 modules:
+  * QtCore
+  * QtGui
+  * QtXml
+  * QtDBus
 
 Package: ruby-qt4-declarative
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: QtDeclarative bindings for the Ruby language
+ This package provides the Ruby bindings for the QtDeclarative Qt 4 library.
 
 Package: ruby-qt4-dbg
 Priority: extra
 Section: debug
 Architecture: any
 Depends: ruby-qt4 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: Qt 4 bindings for the Ruby language -- debug symbols
+ This package provides the debug symbols of the Qt 4 Ruby bindings.
 
 Package: ruby-qt4-phonon
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: libqt4-ruby, libqt4-ruby1.8
 Breaks: libqt4-ruby, libqt4-ruby1.8
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: Phonon bindings for the Ruby language
+ This package provides the Ruby bindings for the Phonon library.
 
 Package: ruby-qt4-script
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: libqt4-ruby, libqt4-ruby1.8
 Breaks: libqt4-ruby, libqt4-ruby1.8
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: QtScript bindings for the Ruby language
+ This package provides the Ruby bindings for the QtScript Qt 4 library.
 
 Package: ruby-qt4-test
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: libqt4-ruby, libqt4-ruby1.8
 Breaks: libqt4-ruby, libqt4-ruby1.8
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: QtTest bindings for the Ruby language
+ This package provides the Ruby bindings for the QtTest Qt 4 library.
 
 Package: ruby-qt4-uitools
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: libqt4-ruby, libqt4-ruby1.8
 Breaks: libqt4-ruby, libqt4-ruby1.8
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: QtUiTools bindings for the Ruby language
+ This package provides the Ruby bindings for the QtUiTools Qt 4 library.
 
 Package: ruby-qt4-webkit
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: libqt4-ruby, libqt4-ruby1.8
 Breaks: libqt4-ruby, libqt4-ruby1.8
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: QtWebKit bindings for the Ruby language
+ This package provides the Ruby bindings for the QtWebKit Qt 4 library.
 
 Package: ruby-qwt5
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: QWt5 bindings for the Ruby language
+ This package provides the Ruby bindings for the QWt5 library.
 
 #Transitional packages: http://wiki.debian.org/Teams/Ruby/RubyInWheezy
 Package: libqt4-ruby
 Architecture: all
 Depends: ruby-qt4
-Description: Transitional dummy package for libqt4-ruby
- The KDE community creates tools and applications for the modern desktop. This package lets developers use these tools with the Ruby language.
+Description: transitional package for ruby-qt4
+ This is a transitional package to ease upgrades to the ruby-qt4 package.
+ It can safely be removed.
 
 Package: libqt4-ruby1.8
 Architecture: all
 Depends: ruby-qt4
-Description: Transitional dummy package for libqt4-ruby1.8
- The KDE community creates tools and applications for the modern desktop. This package lets developers use these tools with the Ruby language.
+Description: transitional package for ruby-qt4
+ This is a transitional package to ease upgrades to the ruby-qt4 package.
+ It can safely be removed.
 
