@@ -1,6 +1,4 @@
 #! /usr/bin/make -f
-# This has to be exported to make some magic below work.
-export DH_OPTIONS
 
 override_dh_install:
 	dh_install --list-missing
