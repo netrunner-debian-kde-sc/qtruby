@@ -17,6 +17,8 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: internal library for Qt 4 Ruby bindings
  This is an internal library of Qt Ruby.
+ .
+ This is part of the Qt Ruby module.
 
 Package: libqtruby4shared-dev
 Section: libdevel
@@ -30,6 +32,8 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: QScintilla2 bindings for the Ruby language
  This package provides the Ruby bindings for the QScintilla2 library.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qt4
 Architecture: any
@@ -41,15 +45,20 @@ Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: Qt 4 bindings for the Ruby language
  This package provides the Ruby bindings for some of the Qt 4 modules:
   * QtCore
-  * QtGui
-  * QtXml
   * QtDBus
+  * QtGui
+  * QtNetwork
+  * QtXml
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qt4-declarative
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: QtDeclarative bindings for the Ruby language
  This package provides the Ruby bindings for the QtDeclarative Qt 4 library.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qt4-dbg
 Priority: extra
@@ -60,6 +69,8 @@ Replaces: kdebindings-dbg
 Depends: ruby-qt4 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: Qt 4 bindings for the Ruby language -- debug symbols
  This package provides the debug symbols of the Qt 4 Ruby bindings.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qt4-phonon
 Architecture: any
@@ -68,6 +79,8 @@ Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: Phonon bindings for the Ruby language
  This package provides the Ruby bindings for the Phonon library.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qt4-script
 Architecture: any
@@ -76,6 +89,8 @@ Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: QtScript bindings for the Ruby language
  This package provides the Ruby bindings for the QtScript Qt 4 library.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qt4-test
 Architecture: any
@@ -84,6 +99,8 @@ Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: QtTest bindings for the Ruby language
  This package provides the Ruby bindings for the QtTest Qt 4 library.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qt4-uitools
 Architecture: any
@@ -92,6 +109,8 @@ Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: QtUiTools bindings for the Ruby language
  This package provides the Ruby bindings for the QtUiTools Qt 4 library.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qt4-webkit
 Architecture: any
@@ -100,12 +119,16 @@ Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: QtWebKit bindings for the Ruby language
  This package provides the Ruby bindings for the QtWebKit Qt 4 library.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qwt5
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: QWt5 bindings for the Ruby language
  This package provides the Ruby bindings for the QWt5 library.
+ .
+ This is part of the Qt Ruby module.
 
 #Transitional packages: http://wiki.debian.org/Teams/Ruby/RubyInWheezy
 Package: libqt4-ruby
