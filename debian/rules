@@ -2,31 +2,10 @@
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
 
-objdir18 = $(CURDIR)/obj-ruby18
-objdir19 = $(CURDIR)/obj-ruby19
-
-DEST=$(CURDIR)/debian/tmp
-DEST_USR_LIB=$(DEST)/usr/lib
-
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
     NUMJOBS = $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
     MAKEFLAGS += -j$(NUMJOBS)
 endif
-
-cmake_flags :=  \
-    -DCMAKE_INSTALL_PREFIX=/usr     \
-    -DCMAKE_USE_RELATIVE_PATHS=ON   \
-    -DCMAKE_VERBOSE_MAKEFILE=ON     \
-    \
-    $(DEB_CMAKE_KDE4_FLAGS) $(DEB_CMAKE_CUSTOM_FLAGS)
-
-CFLAGS = -Wall -g
-ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
-    CFLAGS += -O0
-else
-    CFLAGS += -O2
-endif
-
 
 override_dh_install:
 	dh_install --list-missing
@@ -39,38 +18,22 @@ override_dh_gencontrol:
 	dh_sodeps
 	dh_gencontrol
 
-clean:
-	dh_testdir
-	rm -rf $(objdir18)
-	rm -rf $(objdir19)
-	dh_clean
+override_dh_auto_clean:
+	dh_auto_clean --builddirectory=obj-ruby18
+	dh_auto_clean --builddirectory=obj-ruby191
 
-build:
-	dh_testdir
-	mkdir -p $(objdir18)
-	mkdir -p $(objdir19)
-	cd $(objdir18) && cmake $(CURDIR) -DCMAKE_C_FLAGS="$(CFLAGS)" -DCMAKE_CXX_FLAGS="$(CFLAGS)" \
-	  -DRUBY_EXECUTABLE=/usr/bin/ruby1.8 $(cmake_flags)
-	cd $(objdir19) && cmake $(CURDIR) -DCMAKE_C_FLAGS="$(CFLAGS)" -DCMAKE_CXX_FLAGS="$(CFLAGS)" \
-	  -DRUBY_EXECUTABLE=/usr/bin/ruby1.9.1 -DRUBY_LIBRARY=/usr/lib/libruby-1.9.1.so $(cmake_flags)
-	$(MAKE) -C $(objdir18)
-	$(MAKE) -C $(objdir19)
+override_dh_auto_configure:
+	dh_auto_configure --builddirectory=obj-ruby18  -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.8
+	dh_auto_configure --builddirectory=obj-ruby191 -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.9.1 -DRUBY_LIBRARY=/usr/lib/libruby-1.9.1.so
+
+override_dh_auto_build:
+	dh_auto_build --builddirectory=obj-ruby18
+	dh_auto_build --builddirectory=obj-ruby191
+
+override_dh_auto_install:
+	dh_auto_install --builddirectory=obj-ruby18
+	dh_auto_install --builddirectory=obj-ruby191
 
 %:
 	dh $@
-
-install:
-	dh_testroot
-	dh_testdir
-	dh_prep
-	$(MAKE) -C $(objdir18) install/fast DESTDIR=$(CURDIR)/debian/tmp
-	$(MAKE) -C $(objdir19) install/fast DESTDIR=$(CURDIR)/debian/tmp
-	dh_install
-	dh_installdocs
-	dh_installchangelogs
-	dh_installexamples
-	dh_installman
-	dh_lintian
-	dh_compress
-	dh_fixperms
 
