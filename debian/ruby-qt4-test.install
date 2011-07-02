@@ -1,2 +1,4 @@
 usr/lib/ruby/1.8/qttest/qttest.rb
 usr/lib/ruby/1.8/*/qttest.so
+usr/lib/ruby/1.9*/qttest/qttest.rb
+usr/lib/ruby/1.9*/*/qttest.so

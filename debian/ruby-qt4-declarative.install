@@ -1,2 +1,4 @@
 usr/lib/ruby/1.8/qtdeclarative/qtdeclarative.rb
 usr/lib/ruby/1.8/*/qtdeclarative.so
+usr/lib/ruby/1.9*/qtdeclarative/qtdeclarative.rb
+usr/lib/ruby/1.9*/*/qtdeclarative.so

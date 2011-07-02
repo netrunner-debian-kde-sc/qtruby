@@ -1,2 +1,4 @@
 usr/lib/ruby/1.8/phonon/phonon.rb
 usr/lib/ruby/1.8/*/phonon.so
+usr/lib/ruby/1.9*/phonon/phonon.rb
+usr/lib/ruby/1.9*/*/phonon.so

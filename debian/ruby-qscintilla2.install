@@ -1,2 +1,4 @@
 usr/lib/ruby/1.8/*/qscintilla.so
 usr/lib/ruby/1.8/qscintilla/qscintilla.rb
+usr/lib/ruby/1.9*/*/qscintilla.so
+usr/lib/ruby/1.9*/qscintilla/qscintilla.rb
