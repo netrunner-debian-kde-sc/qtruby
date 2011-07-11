@@ -3,6 +3,7 @@ qtruby (4:4.6.80-1) UNRELEASED; urgency=low
   [ David Palacio ]
   * Source package `kdebindings` split.
   * Follow package naming guidelines for Ruby in Wheeze.
+  * Add inter-module dependencies.
 
   [ Pino Toscano ]
   * Add kdebindings-dbg to ruby-qt4-dbg Breaks/Replaces.
