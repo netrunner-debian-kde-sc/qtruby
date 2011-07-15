@@ -1,4 +1,4 @@
-qtruby (4:4.6.80-1) UNRELEASED; urgency=low
+qtruby (4:4.6.95-1) UNRELEASED; urgency=low
 
   [ David Palacio ]
   * Source package `kdebindings` split.
