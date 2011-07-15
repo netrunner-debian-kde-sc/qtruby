@@ -66,7 +66,7 @@ Section: debug
 Architecture: any
 Breaks: kdebindings-dbg
 Replaces: kdebindings-dbg
-Depends: ruby-qt4 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: ruby-qt4 (= ${binary:Version}), ${misc:Depends}
 Description: Qt 4 bindings for the Ruby language -- debug symbols
  This package provides the debug symbols of the Qt 4 Ruby bindings.
  .
