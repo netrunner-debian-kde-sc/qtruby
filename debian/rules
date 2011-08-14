@@ -1,14 +1,21 @@
 #! /usr/bin/make -f
 
+#Always use Ruby 1.8.x
+RUBY_SITEARCH := $(shell ruby1.8 -rrbconfig -e 'puts Config::CONFIG["sitearch"]')
+CMAKE_FLAGS := \
+  -DRUBY_EXECUTABLE=/usr/bin/ruby1.8 \
+  -DCUSTOM_RUBY_SITE_LIB_DIR=/usr/lib/ruby/1.8/ \
+  -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.8/$(RUBY_SITEARCH) \
+  $(NULL)
+
 override_dh_install:
 	dh_install --list-missing
 
 override_dh_strip:
 	dh_strip --dbg-package=ruby-qt4-dbg
 
-#Always use Ruby 1.8.x
 override_dh_auto_configure:
-	dh_auto_configure -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.8
+	dh_auto_configure -- $(CMAKE_FLAGS)
 
 #Build-Depend on debhelper (>= 7.4.10) for --parallel
 #Build-Depend on pkg-kde-tools (>= 0.6.8) for the sodeps addon
