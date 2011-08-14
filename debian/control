@@ -5,7 +5,7 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Torsten Marek <shlomme@debian.org>, Sune Vuorela <sune@debian.org>, David Palacio <dpalacio@orbitalibre.org>, Michael Meskes <meskes@debian.org>
 Build-Depends: debhelper (>= 7.4.10), pkg-kde-tools (>= 0.6.8), cmake,
  smoke-dev-tools, libsmokeqt4-dev, ruby1.8, ruby1.8-dev, libqt4-dev,
- libqtwebkit-dev, libqwt5-qt4-dev, libphonon-dev, libqscintilla2-dev
+ libqtwebkit-dev, libphonon-dev, libqscintilla2-dev
 Standards-Version: 3.9.2
 Homepage: http://projects.kde.org/projects/kde/kdebindings/ruby/qtruby
 Vcs-Git: git://git.debian.org/git/pkg-kde/kde-sc/qtruby.git
@@ -125,13 +125,13 @@ Description: QtWebKit bindings for the Ruby language
  .
  This is part of the Qt Ruby module.
 
-Package: ruby-qwt5
-Architecture: any
-Depends: ruby-qt4, ${shlibs:Depends}, ${misc:Depends}
-Description: QWt5 bindings for the Ruby language
- This package provides the Ruby bindings for the QWt5 library.
- .
- This is part of the Qt Ruby module.
+#Package: ruby-qwt5
+#Architecture: any
+#Depends: ruby-qt4, ${shlibs:Depends}, ${misc:Depends}
+#Description: QWt5 bindings for the Ruby language
+# This package provides the Ruby bindings for the QWt5 library.
+# .
+# This is part of the Qt Ruby module.
 
 #Transitional packages: http://wiki.debian.org/Teams/Ruby/RubyInWheezy
 Package: libqt4-ruby
