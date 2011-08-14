@@ -76,6 +76,7 @@ Description: Qt 4 bindings for the Ruby language -- debug symbols
 Package: ruby-qt4-phonon
 Architecture: any
 Depends: ruby-qt4, ${shlibs:Depends}, ${misc:Depends}
+Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: Phonon bindings for the Ruby language
  This package provides the Ruby bindings for the Phonon library.
@@ -85,6 +86,7 @@ Description: Phonon bindings for the Ruby language
 Package: ruby-qt4-script
 Architecture: any
 Depends: ruby-qt4, ${shlibs:Depends}, ${misc:Depends}
+Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: QtScript bindings for the Ruby language
  This package provides the Ruby bindings for the QtScript Qt 4 library.
@@ -94,6 +96,7 @@ Description: QtScript bindings for the Ruby language
 Package: ruby-qt4-test
 Architecture: any
 Depends: ruby-qt4, ${shlibs:Depends}, ${misc:Depends}
+Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: QtTest bindings for the Ruby language
  This package provides the Ruby bindings for the QtTest Qt 4 library.
@@ -103,6 +106,7 @@ Description: QtTest bindings for the Ruby language
 Package: ruby-qt4-uitools
 Architecture: any
 Depends: ruby-qt4, ${shlibs:Depends}, ${misc:Depends}
+Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: QtUiTools bindings for the Ruby language
  This package provides the Ruby bindings for the QtUiTools Qt 4 library.
@@ -112,6 +116,7 @@ Description: QtUiTools bindings for the Ruby language
 Package: ruby-qt4-webkit
 Architecture: any
 Depends: ruby-qt4, ${shlibs:Depends}, ${misc:Depends}
+Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Description: QtWebKit bindings for the Ruby language
  This package provides the Ruby bindings for the QtWebKit Qt 4 library.
