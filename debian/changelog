@@ -1,11 +1,36 @@
 qtruby (4:4.6.95-1) UNRELEASED; urgency=low
 
+  * Initial release, split from the kdebindings source.
+
   [ David Palacio ]
-  * Source package `kdebindings` split.
-  * Follow package naming guidelines for Ruby in Wheeze.
-  * Add inter-module dependencies.
+  * Follow package naming guidelines for Ruby.
+  * Split Qt modules in own packages.
+  * Package QScintilla2 binding.
+  * Update control:
+    - add libsmokeqt4-dbg
+    - update Uploaders
+    - remove redundant section fields
+    - add inter-module dependencies
+  * Switch to dh7:
+    - clean rules
+    - pass --list-missing to dh_install
+  * Adapt watch file to the new source name.
+  * Adapt Vcs fields.
+  * Switch copyright to the DEP-5 format, revision 174.
 
   [ Pino Toscano ]
-  * Add kdebindings-dbg to ruby-qt4-dbg Breaks/Replaces.
+  * Update rules:
+    - pass sodeps as dh addon
+  * Update control:
+    - libsmokeqt4-dbg: make it break/replace kdebindings-dbg
+    - add ${misc:Depends} to the packages lacking it
+   - improve descriptions
+  * Update the patches:
+    - strip sequence numbers from the filenames
+    - refresh
+    - add DEP-3 headers for patches which didn't have them
+
+  [ Modestas Vainius ]
+  * Remove myself from Uploaders.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 17 Jun 2011 22:01:09 -0500
