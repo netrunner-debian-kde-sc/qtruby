@@ -1,3 +1,7 @@
+Author: David Palacio <dpalacio@uninorte.edu.co>
+Last-Update: 2011-06-30
+Forwarded: no
+
 --- a/examples/designer/calculatorbuilder/main.rb
 +++ b/examples/designer/calculatorbuilder/main.rb
 @@ -23,7 +23,7 @@

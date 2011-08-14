@@ -1,4 +1,9 @@
-Use Debian executable name
+Author: Vincent Fourmond <fourmond@debian.org>
+Description: Use Debian executable name
+Last-Update: 2011-06-24
+Origin: vendor
+Forwarded: no
+
 --- a/bin/rbqtapi
 +++ b/bin/rbqtapi
 @@ -1,4 +1,4 @@
