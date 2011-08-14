@@ -1,0 +1,52 @@
+.TH RBUIC4 "1" "October 2006" "Qt4-qtruby from kdebindings 4.1 branch" 
+.SH NAME
+rbuic4 \- Qt/Ruby user interface compiler.
+
+.SH SYNOPSIS
+.B rbuic4
+[options]
+.I uifile
+
+.SH DESCRIPTION
+
+.B rbuic4
+compiles user interface files (.ui) into ruby code.
+
+.SH OPTIONS
+
+.TP
+.B -h, -help
+display a short help and exit
+.TP
+.B  -v, -version              
+display version
+.TP
+.B  -d, -dependencies         
+display the dependencies
+.TP
+.BI -o \ file
+place the output into 
+.I file
+.TP
+.BI -tr func                
+use 
+.I func() 
+for i18n
+.TP
+.B  -p, -no-protection        
+disable header protection (most probably useless for Ruby)
+.TP
+.BI -g \ name                 
+change generator
+.TP
+.B -x                        
+generate extra code to test the class
+
+.SH AUTHOR
+.B rbuic4
+is based on the 
+.B uic
+program from the Qt distribution. 
+
+This manual page was written by Vincent
+Fourmond for the Debian project, but may be used by others.
