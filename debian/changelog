@@ -24,9 +24,9 @@ qtruby (4:4.7.0-0r1) UNRELEASED; urgency=low
   * Update control:
     - libsmokeqt4-dbg: make it break/replace kdebindings-dbg
     - add ${misc:Depends} to the packages lacking it
-   - improve descriptions
-   - require smoke-dev-tools >= 4.7.0, and make libqtruby4shared-dev
-     depend on it
+    - improve descriptions
+    - require smoke-dev-tools >= 4.7.0, and make libqtruby4shared-dev
+      depend on it
   * Update the patches:
     - strip sequence numbers from the filenames
     - refresh
