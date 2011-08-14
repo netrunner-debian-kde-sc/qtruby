@@ -16,7 +16,7 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: internal library for Qt 4 Ruby bindings
- This is an internal library of Qt Ruby.
+ This package provides an internal library of Qt Ruby.
  .
  This is part of the Qt Ruby module.
 
@@ -24,8 +24,10 @@ Package: libqtruby4shared-dev
 Section: libdevel
 Architecture: any
 Depends: ${so:Depends}, ${misc:Depends}
-Description: Qt4 Ruby bindings
- moduledescreplace
+Description: internal library for Qt 4 Ruby bindings -- development
+ This package provides the development files of the internal Qt Ruby library.
+ .
+ This is part of the Qt Ruby module.
 
 Package: ruby-qscintilla2
 Architecture: any
