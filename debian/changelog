@@ -1,4 +1,4 @@
-qtruby (4:4.6.95-1) UNRELEASED; urgency=low
+qtruby (4:4.7.0-0r1) UNRELEASED; urgency=low
 
   * Initial release, split from the kdebindings source.
 
