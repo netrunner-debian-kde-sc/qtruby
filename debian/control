@@ -75,7 +75,7 @@ Description: Qt 4 bindings for the Ruby language -- debug symbols
  .
  This is part of the Qt Ruby module.
 
-Package: ruby-qt4-phonon
+Package: ruby-phonon
 Architecture: any
 Depends: ruby-qt4, ${shlibs:Depends}, ${misc:Depends}
 Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
