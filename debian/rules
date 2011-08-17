@@ -17,6 +17,9 @@ override_dh_strip:
 override_dh_auto_configure:
 	dh_auto_configure -- $(CMAKE_FLAGS)
 
+override_dh_compress:
+	dh_compress -X.rb -X.ui -X.mng -X.xbel
+
 #Build-Depend on debhelper (>= 7.4.10) for --parallel
 #Build-Depend on pkg-kde-tools (>= 0.6.8) for the sodeps addon
 %:

@@ -21,6 +21,7 @@ qtruby (4:4.7.0-0r1) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Update rules:
     - pass sodeps as dh addon
+    - do not compress .rb, .ui, .mng, and .xbel files (found in the examples)
   * Update control:
     - libsmokeqt4-dbg: make it break/replace kdebindings-dbg
     - add ${misc:Depends} to the packages lacking it
