@@ -28,6 +28,7 @@ qtruby (4:4.7.0-0r1) UNRELEASED; urgency=low
     - improve descriptions
     - require smoke-dev-tools >= 4.7.0, and make libqtruby4shared-dev
       depend on it
+    - tighten the dependencies of the ruby-* modules wrt ruby-qt4
   * Update the patches:
     - strip sequence numbers from the filenames
     - refresh
