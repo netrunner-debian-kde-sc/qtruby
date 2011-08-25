@@ -69,7 +69,7 @@ Architecture: any
 Breaks: kdebindings-dbg
 Replaces: kdebindings-dbg
 Depends: ruby-qt4 (= ${binary:Version}), ${misc:Depends}
-Recommends: libsmokeqt4-dbg
+Recommends: libsmokeqt4-dbg, libruby1.8-dbg
 Description: Qt 4 bindings for the Ruby language -- debug symbols
  This package provides the debug symbols of the Qt 4 Ruby bindings.
  .

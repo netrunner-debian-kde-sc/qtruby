@@ -23,7 +23,8 @@ qtruby (4:4.7.0-0r1) UNRELEASED; urgency=low
     - pass sodeps as dh addon
     - do not compress .rb, .ui, .mng, and .xbel files (found in the examples)
   * Update control:
-    - ruby-qt4-dbg: make it break/replace kdebindings-dbg
+    - ruby-qt4-dbg: make it break/replace kdebindings-dbg, and recommend
+      libruby1.8-dbg
     - add ${misc:Depends} to the packages lacking it
     - improve descriptions
     - require smoke-dev-tools >= 4.7.0, and make libqtruby4shared-dev
