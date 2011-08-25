@@ -7,7 +7,7 @@ qtruby (4:4.7.0-0r1) UNRELEASED; urgency=low
   * Split Qt modules in own packages.
   * Package QScintilla2 binding.
   * Update control:
-    - add libsmokeqt4-dbg
+    - add ruby-qt4-dbg
     - update Uploaders
     - remove redundant section fields
     - add inter-module dependencies
@@ -23,7 +23,7 @@ qtruby (4:4.7.0-0r1) UNRELEASED; urgency=low
     - pass sodeps as dh addon
     - do not compress .rb, .ui, .mng, and .xbel files (found in the examples)
   * Update control:
-    - libsmokeqt4-dbg: make it break/replace kdebindings-dbg
+    - ruby-qt4-dbg: make it break/replace kdebindings-dbg
     - add ${misc:Depends} to the packages lacking it
     - improve descriptions
     - require smoke-dev-tools >= 4.7.0, and make libqtruby4shared-dev
