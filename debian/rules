@@ -20,6 +20,10 @@ override_dh_auto_configure:
 override_dh_compress:
 	dh_compress -X.rb -X.ui -X.mng -X.xbel
 
+override_dh_installexamples:
+	dh_installexamples
+	tar cvzf $(CURDIR)/debian/ruby-qt4/usr/share/doc/ruby-qt4/examples.tar.gz examples
+
 #Build-Depend on debhelper (>= 7.4.10) for --parallel
 #Build-Depend on pkg-kde-tools (>= 0.6.8) for the sodeps addon
 %:
