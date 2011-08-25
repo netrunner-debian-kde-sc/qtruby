@@ -1,0 +1,25 @@
+From 45c2835df2b6c6174bbd7620c276276359c8364c Mon Sep 17 00:00:00 2001
+From: Pino Toscano <pino@kde.org>
+Date: Sun, 14 Aug 2011 16:59:37 +0200
+Subject: [PATCH] fix QtDeclarative cmake variable
+
+---
+ modules/qtdeclarative/CMakeLists.txt |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/modules/qtdeclarative/CMakeLists.txt b/modules/qtdeclarative/CMakeLists.txt
+index 400ac24..f4fd1cd 100644
+--- a/modules/qtdeclarative/CMakeLists.txt
++++ b/modules/qtdeclarative/CMakeLists.txt
+@@ -4,7 +4,7 @@ INCLUDE_DIRECTORIES (${QT_INCLUDES})
+ set(rubyqtdeclarative_LIBRARY_SRC qtdeclarative.cpp qtdeclarativehandlers.cpp)
+ add_library(rubyqtdeclarative MODULE ${rubyqtdeclarative_LIBRARY_SRC})
+ target_link_libraries(rubyqtdeclarative
+-    ${QT_QTWEBKIT_LIBRARY}
++    ${QT_QTDECLARATIVE_LIBRARY}
+     ${SMOKE_QTDECLARATIVE_LIBRARY}
+     qtruby4shared
+ )
+-- 
+1.7.5.4
+
