@@ -34,8 +34,6 @@ qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
     - strip sequence numbers from the filenames
     - refresh
     - add DEP-3 headers for patches which didn't have them
-    - backport upstream fix-QtDeclarative-cmake-variable.patch to fix the
-      linking of the qtdeclarative module
   * Install the examples for qscintilla and qttest.
   * Compress all the examples installed by ruby-qt4 in a single example.tar.gz
     archive, reducing the space they take.
