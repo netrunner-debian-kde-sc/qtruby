@@ -1,0 +1,48 @@
+.TH RBRCC "1" "October 2006" "Qt4-qtruby from kdebindings 4.1 branch" 
+.SH NAME
+rbrcc \- Qt/Ruby resource compiler
+
+.SH SYNOPSIS
+.B rbrcc
+[options]
+.I inputs
+
+.SH DESCRIPTION
+
+.B rbrcc
+compiles resource files (.qrc) into ruby code.
+
+.SH OPTIONS
+.TP
+.BI -o \ file           
+Write output to file rather than stdout
+.TP
+.BI -name \ name        
+Create an external initialization method with name
+.TP
+.BI -threshold \ level  
+Threshold to consider compressing files
+.TP
+.BI -compress \ level   
+Compress input files by level
+.TP
+.BI -root \ path
+Prefix resource access path with root path
+.TP
+.BI -no-compress
+Disable all compression
+.TP
+.BI -version
+Display version
+.TP
+.BI -help
+Display option summary
+
+.SH AUTHOR
+.B rbrcc
+is based on the 
+.B rcc 
+program from the Qt distribution. 
+
+This manual page was written by Vincent
+Fourmond for the Debian project, but may be used by others.

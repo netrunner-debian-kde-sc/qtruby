@@ -1,5 +1,4 @@
-usr/lib/ruby/1.8/*/qwt.so
 usr/lib/ruby/1.8/qwt/qwt.rb
-usr/lib/ruby/1.9*/*/qwt.so
+usr/lib/ruby/1.8/*/qwt.so
 usr/lib/ruby/1.9*/qwt/qwt.rb
-
+usr/lib/ruby/1.9*/*/qwt.so

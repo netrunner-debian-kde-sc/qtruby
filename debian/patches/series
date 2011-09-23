@@ -1,2 +1,2 @@
-00_install_to_usr.diff
-01_use_ruby1.8.diff
+use_ruby1.8.diff
+fix_ruby_requires.diff

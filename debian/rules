@@ -1,11 +1,6 @@
 #! /usr/bin/make -f
-# This has to be exported to make some magic below work.
-export DH_OPTIONS
 
-ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
-    NUMJOBS = $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
-    MAKEFLAGS += -j$(NUMJOBS)
-endif
+RUBY_SITEARCH := $(shell ruby1.8 -rrbconfig -e 'puts Config::CONFIG["sitearch"]')
 
 override_dh_install:
 	dh_install --list-missing
@@ -13,17 +8,14 @@ override_dh_install:
 override_dh_strip:
 	dh_strip --dbg-package=ruby-qt4-dbg
 
-#Build-Depend on pkg-kde-tools (>= 0.6.8) for dh_sodeps
-override_dh_gencontrol:
-	dh_sodeps
-	dh_gencontrol
-
 override_dh_auto_clean:
 	dh_auto_clean --builddirectory=obj-ruby18
 	dh_auto_clean --builddirectory=obj-ruby191
 
 override_dh_auto_configure:
-	dh_auto_configure --builddirectory=obj-ruby18  -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.8
+	dh_auto_configure --builddirectory=obj-ruby18  -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.8 \
+                                                          -DCUSTOM_RUBY_SITE_LIB_DIR=/usr/lib/ruby/1.8/ \
+                                                          -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.8/$(RUBY_SITEARCH)
 	dh_auto_configure --builddirectory=obj-ruby191 -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.9.1 -DRUBY_LIBRARY=/usr/lib/libruby-1.9.1.so
 
 override_dh_auto_build:
@@ -34,6 +26,15 @@ override_dh_auto_install:
 	dh_auto_install --builddirectory=obj-ruby18
 	dh_auto_install --builddirectory=obj-ruby191
 
+override_dh_compress:
+	dh_compress -X.rb -X.ui -X.mng -X.xbel
+
+override_dh_installexamples:
+	dh_installexamples
+	tar cvzf $(CURDIR)/debian/ruby-qt4/usr/share/doc/ruby-qt4/examples.tar.gz examples
+
+#Build-Depend on debhelper (>= 7.4.10) for --parallel
+#Build-Depend on pkg-kde-tools (>= 0.6.8) for the sodeps addon
 %:
-	dh $@
+	dh $@ --parallel --with sodeps
 

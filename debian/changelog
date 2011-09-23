@@ -1,7 +1,44 @@
-qtruby (4:4.6.80-1) UNRELEASED; urgency=low
+qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
+
+  * Initial release, split from the kdebindings source.
 
   [ David Palacio ]
-  * Source package `kdebindings` split.
-  * Follow package naming guidelines for Ruby in Wheeze.
+  * Follow package naming guidelines for Ruby.
+  * Split Qt modules in own packages.
+  * Package QScintilla2 binding.
+  * Update control:
+    - add ruby-qt4-dbg
+    - update Uploaders
+    - remove redundant section fields
+    - add inter-module dependencies
+  * Switch to dh7:
+    - clean rules
+    - pass --list-missing to dh_install
+  * Adapt watch file to the new source name.
+  * Adapt Vcs fields.
+  * Switch copyright to the DEP-5 format, revision 174.
+
+  [ Pino Toscano ]
+  * Update rules:
+    - pass sodeps as dh addon
+    - do not compress .rb, .ui, .mng, and .xbel files (found in the examples)
+  * Update control:
+    - ruby-qt4-dbg: make it break/replace kdebindings-dbg, and recommend
+      libruby1.8-dbg
+    - add ${misc:Depends} to the packages lacking it
+    - improve descriptions
+    - require smoke-dev-tools >= 4.7.0, and make libqtruby4shared-dev
+      depend on it
+    - tighten the dependencies of the ruby-* modules wrt ruby-qt4
+  * Update the patches:
+    - strip sequence numbers from the filenames
+    - refresh
+    - add DEP-3 headers for patches which didn't have them
+  * Install the examples for qscintilla and qttest.
+  * Compress all the examples installed by ruby-qt4 in a single example.tar.gz
+    archive, reducing the space they take.
+
+  [ Modestas Vainius ]
+  * Remove myself from Uploaders.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 17 Jun 2011 22:01:09 -0500

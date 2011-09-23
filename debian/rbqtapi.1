@@ -1,0 +1,51 @@
+.TH RBQTAPI "1" "October 2006" "Qt4-qtruby from kdebindings 4.1 branch" 
+.SH NAME
+rbqtapi \- a qtruby introspection tool
+
+.SH SYNOPSIS
+.B rbqtapi 
+[options]
+.I [\-r re] [class]
+
+.SH DESCRIPTION
+
+.B rbqtapi
+can be used to check which Qt functions are known to
+qt4-qtruby. Without arguments, it lists all the function known. An
+argument is interpreted as a class name whose methods are
+displayed. You can also specify a regular expression to search for 
+functions with the
+.B \-r
+option.
+
+.SH OPTIONS
+.TP
+.BI \-r \ re 
+find all functions matching regular expression/keyword
+.IR re .
+
+.TP
+.B \-i
+together with 
+.BR \-r ,  
+performs a case insensitive search.
+
+.TP
+.B \-p
+display also inherited methods for 
+.IR class .
+
+.TP
+.B \-v
+print qtruby and Qt versions
+
+.TP
+.B \-h
+prints a short help message.
+
+.SH AUTHOR
+.B rbqtapi
+was written by Germain Garand. 
+
+This manual page was written by Vincent Fourmond for the Debian
+project, but may be used by others. 
