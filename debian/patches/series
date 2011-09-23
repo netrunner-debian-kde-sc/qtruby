@@ -1,2 +1,3 @@
 use_ruby1.8.diff
 fix_ruby_requires.diff
+Configure-QtRubyShared-Library-Name.patch

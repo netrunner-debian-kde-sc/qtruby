@@ -18,11 +18,13 @@ override_dh_auto_clean:
 override_dh_auto_configure:
 	dh_auto_configure --builddirectory=$(OBJRUBY18)  -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.8 \
                                                             -DCUSTOM_RUBY_SITE_LIB_DIR=/usr/lib/ruby/1.8/ \
-                                                            -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.8/$(RUBY18_SITEARCH)
+                                                            -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.8/$(RUBY18_SITEARCH) \
+                                                            -DQTRUBY4SHAREDNAME=qtruby4shared
 	dh_auto_configure --builddirectory=$(OBJRUBY19) -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.9.1 \
                                                            -DRUBY_LIBRARY=/usr/lib/libruby-1.9.1.so \
                                                            -DCUSTOM_RUBY_SITE_LIB_DIR=/usr/lib/ruby/1.9.1/ \
-                                                           -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.9.1/$(RUBY19_SITEARCH)
+                                                           -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.9.1/$(RUBY19_SITEARCH) \
+                                                           -DQTRUBY4SHAREDNAME=qtruby4shared-ruby191
 
 override_dh_auto_build:
 	dh_auto_build --builddirectory=$(OBJRUBY18)
