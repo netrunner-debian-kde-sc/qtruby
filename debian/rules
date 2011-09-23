@@ -1,6 +1,9 @@
 #! /usr/bin/make -f
 
-RUBY_SITEARCH := $(shell ruby1.8 -rrbconfig -e 'puts Config::CONFIG["sitearch"]')
+RUBY18_SITEARCH := $(shell ruby1.8 -rrbconfig -e 'puts Config::CONFIG["sitearch"]')
+RUBY19_SITEARCH := $(shell ruby1.9.1 -rrbconfig -e 'puts Config::CONFIG["sitearch"]')
+OBJRUBY18 = obj-ruby18
+OBJRUBY19 = obj-ruby19
 
 override_dh_install:
 	dh_install --list-missing
@@ -9,22 +12,25 @@ override_dh_strip:
 	dh_strip --dbg-package=ruby-qt4-dbg
 
 override_dh_auto_clean:
-	dh_auto_clean --builddirectory=obj-ruby18
-	dh_auto_clean --builddirectory=obj-ruby191
+	dh_auto_clean --builddirectory=$(OBJRUBY18)
+	dh_auto_clean --builddirectory=$(OBJRUBY19)
 
 override_dh_auto_configure:
-	dh_auto_configure --builddirectory=obj-ruby18  -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.8 \
-                                                          -DCUSTOM_RUBY_SITE_LIB_DIR=/usr/lib/ruby/1.8/ \
-                                                          -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.8/$(RUBY_SITEARCH)
-	dh_auto_configure --builddirectory=obj-ruby191 -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.9.1 -DRUBY_LIBRARY=/usr/lib/libruby-1.9.1.so
+	dh_auto_configure --builddirectory=$(OBJRUBY18)  -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.8 \
+                                                            -DCUSTOM_RUBY_SITE_LIB_DIR=/usr/lib/ruby/1.8/ \
+                                                            -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.8/$(RUBY18_SITEARCH)
+	dh_auto_configure --builddirectory=$(OBJRUBY19) -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.9.1 \
+                                                           -DRUBY_LIBRARY=/usr/lib/libruby-1.9.1.so \
+                                                           -DCUSTOM_RUBY_SITE_LIB_DIR=/usr/lib/ruby/1.9.1/ \
+                                                           -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.9.1/$(RUBY19_SITEARCH)
 
 override_dh_auto_build:
-	dh_auto_build --builddirectory=obj-ruby18
-	dh_auto_build --builddirectory=obj-ruby191
+	dh_auto_build --builddirectory=$(OBJRUBY18)
+	dh_auto_build --builddirectory=$(OBJRUBY19)
 
 override_dh_auto_install:
-	dh_auto_install --builddirectory=obj-ruby18
-	dh_auto_install --builddirectory=obj-ruby191
+	dh_auto_install --builddirectory=$(OBJRUBY18)
+	dh_auto_install --builddirectory=$(OBJRUBY19)
 
 override_dh_compress:
 	dh_compress -X.rb -X.ui -X.mng -X.xbel
