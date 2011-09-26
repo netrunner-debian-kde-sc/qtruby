@@ -1,5 +1,8 @@
 #! /usr/bin/make -f
 
+pkgs_lib := $(filter-out %-dev %-dbg,$(filter lib%,$(shell dh_listpackages)))
+current_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
+
 #Always use Ruby 1.8.x
 RUBY_SITEARCH := $(shell ruby1.8 -rrbconfig -e 'puts Config::CONFIG["sitearch"]')
 CMAKE_FLAGS := \
@@ -29,6 +32,16 @@ override_dh_installexamples:
 
 override_dh_makeshlibs:
 	dh_makeshlibs -V
+# Generate shlibs local files
+	for pkg in $(pkgs_lib); do \
+		if test -e debian/$${pkg}/DEBIAN/shlibs ; then \
+			sed 's/>=[^)]*/= $(current_version)/' debian/$${pkg}/DEBIAN/shlibs >> debian/shlibs.local ;\
+		fi \
+	done
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f debian/shlibs.local
 
 #Build-Depend on debhelper (>= 7.4.10) for --parallel
 #Build-Depend on pkg-kde-tools (>= 0.6.8) for the sodeps addon
