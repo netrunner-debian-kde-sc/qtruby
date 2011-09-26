@@ -42,6 +42,7 @@ qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
   * Install the examples for qscintilla and qttest.
   * Compress all the examples installed by ruby-qt4 in a single examples.tar.gz
     archive, reducing the space they take.
+  * Update copyright.
 
   [ Modestas Vainius ]
   * Remove myself from Uploaders.

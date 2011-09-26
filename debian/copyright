@@ -3,7 +3,7 @@ Upstream-Name: qtruby
 Source: http://projects.kde.org/projects/kde/kdebindings/ruby/qtruby
 
 Files: *
-Copyright: 2003-2008 Richard Dale <richard.j.dale@gmail.com>
+Copyright: 2003-2008, Richard Dale <richard.j.dale@gmail.com>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -18,11 +18,11 @@ License: GPL-2+
  You should have received a copy of the GNU General Public License
  along with this program. If not, see <http://www.gnu.org/licenses/>
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ On Debian systems, the complete text of the GNU General Public License
+ version 2 can be found in `/usr/share/common-licenses/GPL-2'.
 
 Files: cmake/*
-Copyright: 2011 Arno Rehn
+Copyright: 2011, Arno Rehn
 License: BSD-3-clause
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
@@ -47,10 +47,105 @@ License: BSD-3-clause
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+Files: examples/*/*/*.rb tools/rbrcc/*
+Copyright: 2004-2006, Trolltech AS. All rights reserved.
+License: GPL-2
+ This file may be used under the terms of the GNU General Public
+ License version 2.0 as published by the Free Software Foundation
+ and appearing in the file LICENSE.GPL included in the packaging of
+ this file.  Please review the following information to ensure GNU
+ General Public Licensing requirements will be met:
+ http://www.trolltech.com/products/qt/opensource.html
+ .
+ If you are unsure which license is appropriate for your use, please
+ review the following information:
+ http://www.trolltech.com/products/qt/licensing.html or contact the
+ sales department at sales@trolltech.com.
+ .
+ This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+ WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ version 2 can be found in `/usr/share/common-licenses/GPL-2'.
 
-Files: tools/* examples/*
-Copyright: 1992-2008 Trolltech ASA
-License: GPL-2+
+Files: examples/ruboids/*
+Copyright: 2001, Jim Menard <jimm@io.com>
+License:
+ Ruby is copyrighted free software by Yukihiro Matsumoto <matz@netlab.co.jp>.
+ You can redistribute it and/or modify it under either the terms of the GPL
+ (see COPYING.txt file), or the conditions below:
+ .
+   1. You may make and give away verbatim copies of the source form of the
+      software without restriction, provided that you duplicate all of the
+      original copyright notices and associated disclaimers.
+ .
+   2. You may modify your copy of the software in any way, provided that
+      you do at least ONE of the following:
+ .
+        a) place your modifications in the Public Domain or otherwise
+           make them Freely Available, such as by posting said
+ 	  modifications to Usenet or an equivalent medium, or by allowing
+ 	  the author to include your modifications in the software.
+ .
+        b) use the modified software only within your corporation or
+           organization.
+ .
+        c) rename any non-standard executables so the names do not conflict
+ 	  with standard executables, which must also be provided.
+ .
+        d) make other distribution arrangements with the author.
+ .
+   3. You may distribute the software in object code or executable
+      form, provided that you do at least ONE of the following:
+ .
+        a) distribute the executables and library files of the software,
+ 	  together with instructions (in the manual page or equivalent)
+ 	  on where to get the original distribution.
+ .
+        b) accompany the distribution with the machine-readable source of
+ 	  the software.
+ .
+        c) give non-standard executables non-standard names, with
+           instructions on where to get the original software distribution.
+ .
+        d) make other distribution arrangements with the author.
+ .
+   4. You may modify and include the part of the software into any other
+      software (possibly commercial).  But some files in the distribution
+      are not written by the author, so that they are not under this terms.
+ .
+      They are gc.c(partly), utils.c(partly), regex.[ch], st.[ch] and some
+      files under the ./missing directory.  See each file for the copying
+      condition.
+ .
+   5. The scripts and library files supplied as input to or produced as 
+      output from the software do not automatically fall under the
+      copyright of the software, but belong to whomever generated them, 
+      and may be sold commercially, and may be aggregated with this
+      software.
+ .
+   6. THIS SOFTWARE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR
+      IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+      WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+      PURPOSE.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+Files: src/*
+Copyright: 2003-2008, Richard Dale <richard.j.dale@gmail.com>
+License: LGPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ version 2 can be found in `/usr/share/common-licenses/LGPL-2'.
+
+Files: tools/rbuic/*
+Copyright: 1992-2008, Trolltech ASA
+License: GPL-2 or GPL-3 or other
  This file may be used under the terms of the GNU General Public
  License versions 2.0 or 3.0 as published by the Free Software
  Foundation and appearing in the files LICENSE.GPL2 and LICENSE.GPL3
@@ -86,20 +181,13 @@ License: GPL-2+
  This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
  WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
-
-Files: examples/ruboids/*
-Copyright: 2001 Jim Menard <jimm@io.com>
-License:
- Released under the same license as Ruby. See
- http://www.ruby-lang.org/en/LICENSE.txt.
-
+ On Debian systems, the complete texts of the GNU General Public Licenses
+ version 2 and 3 can be found in `/usr/share/common-licenses/GPL-2' and
+ `/usr/share/common-licenses/GPL-3'.
 
 Files: debian/*
-Copyright: 2008-2011 Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-           2011 David Palacio <dpalacio@orbitalibre.org>
+Copyright: 2008-2011, Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+           2011, David Palacio <dpalacio@orbitalibre.org>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -114,6 +202,5 @@ License: GPL-2+
  You should have received a copy of the GNU General Public License
  along with this program. If not, see <http://www.gnu.org/licenses/>
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
+ On Debian systems, the complete text of the GNU General Public License
+ version 2 can be found in `/usr/share/common-licenses/GPL-2'.
