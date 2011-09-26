@@ -24,6 +24,7 @@ qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
     - do not compress .rb, .ui, .mng, and .xbel files (found in the examples)
     - manually export CXXFLAGS and LDFLAGS from dpkg-buildflags now,
       as dpkg-buildpackage does not do that anymore
+    - generate libraries shlibs based on the current version
   * Update control:
     - ruby-qt4-dbg: make it break/replace kdebindings-dbg, and recommend
       libruby1.8-dbg
