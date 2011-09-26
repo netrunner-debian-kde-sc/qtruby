@@ -38,7 +38,7 @@ qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
     - refresh
     - add DEP-3 headers for patches which didn't have them
   * Install the examples for qscintilla and qttest.
-  * Compress all the examples installed by ruby-qt4 in a single example.tar.gz
+  * Compress all the examples installed by ruby-qt4 in a single examples.tar.gz
     archive, reducing the space they take.
 
   [ Modestas Vainius ]
