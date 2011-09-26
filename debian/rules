@@ -8,6 +8,9 @@ CMAKE_FLAGS := \
   -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.8/$(RUBY_SITEARCH) \
   $(NULL)
 
+export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
+export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
+
 override_dh_install:
 	dh_install --list-missing
 
