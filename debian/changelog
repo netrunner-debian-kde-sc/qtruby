@@ -29,8 +29,9 @@ qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
       libruby1.8-dbg
     - add ${misc:Depends} to the packages lacking it
     - improve descriptions
-    - require smoke-dev-tools >= 4.7.0, and make libqtruby4shared-dev
+    - require smoke-dev-tools >= 4.7.1, and make libqtruby4shared-dev
       depend on it
+    - require libsmokeqt4-dev >= 4.7.1
     - tighten the dependencies of the ruby-* modules wrt ruby-qt4
   * Update the patches:
     - strip sequence numbers from the filenames
