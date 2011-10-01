@@ -5,7 +5,7 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Torsten Marek <shlomme@debian.org>, Sune Vuorela <sune@debian.org>, David Palacio <dpalacio@orbitalibre.org>, Michael Meskes <meskes@debian.org>
 Build-Depends: debhelper (>= 7.4.10), pkg-kde-tools (>= 0.6.8), cmake,
  ruby1.8, ruby1.8-dev, ruby1.9.1, ruby1.9.1-dev,
- smoke-dev-tools (>= 4:4.7.0), libsmokeqt4-dev,
+ smoke-dev-tools (>= 4:4.7.1), libsmokeqt4-dev (>= 4:4.7.1),
  libqt4-dev, libqtwebkit-dev, libphonon-dev, libqscintilla2-dev
 Standards-Version: 3.9.2
 Homepage: http://projects.kde.org/projects/kde/kdebindings/ruby/qtruby
@@ -144,7 +144,8 @@ Description: Transitional package for ruby-qt4
 
 Package: libqt4-ruby1.8
 Architecture: all
-Depends: ${misc:Depends}, ruby-qt4
+Depends: ${misc:Depends}, ruby-qt4, ruby-phonon, ruby-qt4-script,
+ ruby-qt4-test, ruby-qt4-uitools, ruby-qt4-webkit
 Description: Transitional package for ruby-qt4
  This is a transitional package to ease upgrades to the ruby-qt4 package.
  It can safely be removed.

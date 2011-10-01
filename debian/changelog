@@ -22,21 +22,27 @@ qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
   * Update rules:
     - pass sodeps as dh addon
     - do not compress .rb, .ui, .mng, and .xbel files (found in the examples)
+    - manually export CXXFLAGS and LDFLAGS from dpkg-buildflags now,
+      as dpkg-buildpackage does not do that anymore
+    - generate libraries shlibs based on the current version
+    - tighten the various libraries dependencies to the current version
   * Update control:
     - ruby-qt4-dbg: make it break/replace kdebindings-dbg, and recommend
       libruby1.8-dbg
     - add ${misc:Depends} to the packages lacking it
     - improve descriptions
-    - require smoke-dev-tools >= 4.7.0, and make libqtruby4shared-dev
+    - require smoke-dev-tools >= 4.7.1, and make libqtruby4shared-dev
       depend on it
+    - require libsmokeqt4-dev >= 4.7.1
     - tighten the dependencies of the ruby-* modules wrt ruby-qt4
   * Update the patches:
     - strip sequence numbers from the filenames
     - refresh
     - add DEP-3 headers for patches which didn't have them
   * Install the examples for qscintilla and qttest.
-  * Compress all the examples installed by ruby-qt4 in a single example.tar.gz
+  * Compress all the examples installed by ruby-qt4 in a single examples.tar.gz
     archive, reducing the space they take.
+  * Update copyright, adding myself to it.
 
   [ Modestas Vainius ]
   * Remove myself from Uploaders.
