@@ -20,6 +20,7 @@ override_dh_strip:
 override_dh_auto_clean:
 	dh_auto_clean --builddirectory=$(OBJRUBY18)
 	dh_auto_clean --builddirectory=$(OBJRUBY19)
+	rm -f debian/shlibs.local
 
 override_dh_auto_configure:
 	dh_auto_configure --builddirectory=$(OBJRUBY18)  -- -DRUBY_EXECUTABLE=/usr/bin/ruby1.8 \
@@ -55,10 +56,6 @@ override_dh_makeshlibs:
 			sed 's/>=[^)]*/= $(current_version)/' debian/$${pkg}/DEBIAN/shlibs >> debian/shlibs.local ;\
 		fi \
 	done
-
-override_dh_auto_clean:
-	dh_auto_clean
-	rm -f debian/shlibs.local
 
 #Build-Depend on debhelper (>= 7.4.10) for --parallel
 #Build-Depend on pkg-kde-tools (>= 0.6.8) for the sodeps addon
