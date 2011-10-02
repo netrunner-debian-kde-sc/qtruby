@@ -1,8 +1,6 @@
 qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
 
-  * Initial release, split from the kdebindings source:
-    - fixes the uninstallability of the qtruby components of kdebindings
-      (Closes: #643899)
+  * Initial release, split from the kdebindings source.
 
   [ David Palacio ]
   * Follow package naming guidelines for Ruby.
