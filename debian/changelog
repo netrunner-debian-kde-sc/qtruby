@@ -1,4 +1,4 @@
-qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
+qtruby (4:4.7.1-1) unstable; urgency=low
 
   * Initial release, split from the kdebindings source.
 
@@ -47,4 +47,4 @@ qtruby (4:4.7.1-0r1) UNRELEASED; urgency=low
   [ Modestas Vainius ]
   * Remove myself from Uploaders.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 17 Jun 2011 22:01:09 -0500
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Oct 2011 17:31:44 +0200
