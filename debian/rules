@@ -43,7 +43,6 @@ override_dh_auto_clean:
 	dh_auto_clean
 	rm -f debian/shlibs.local
 
-#Build-Depend on debhelper (>= 7.4.10) for --parallel
 #Build-Depend on pkg-kde-tools (>= 0.6.8) for the sodeps addon
 %:
 	dh $@ --parallel --with sodeps

@@ -4,6 +4,7 @@ qtruby (4:4.7.4-0r1) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Bump Standards-Version to 3.9.3, no changes required.
+  * Bump debhelper build dependency to >= 9, and compat to 9.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 02 Apr 2012 19:37:16 +0200
 
