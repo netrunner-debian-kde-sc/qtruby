@@ -7,6 +7,8 @@ qtruby (4:4.7.4-0r1) UNRELEASED; urgency=low
   * Bump debhelper build dependency to >= 9, and compat to 9.
   * Do not manually export CXXFLAGS and LDFLAGS now, since compat v9 does
     that already.
+  * Update copyright:
+    - switch to copyright-format v1.0
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 02 Apr 2012 19:37:16 +0200
 
