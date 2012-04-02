@@ -10,6 +10,8 @@ qtruby (4:4.7.4-0r1) UNRELEASED; urgency=low
   * Update copyright:
     - switch to copyright-format v1.0
     - bump year for myself for the current one
+  * libqt4-ruby, libqt4-ruby1.8: for these transitional packages, set
+    section oldlibs and priority extra.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 02 Apr 2012 19:37:16 +0200
 
