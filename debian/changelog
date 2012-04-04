@@ -4,6 +4,24 @@ qtruby (4:4.8.0-1) UNRELEASED; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 02 Mar 2012 15:31:10 -0500
 
+qtruby (4:4.7.4-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Bump Standards-Version to 3.9.3, no changes required.
+  * Bump debhelper build dependency to >= 9, and compat to 9.
+  * Do not manually export CXXFLAGS and LDFLAGS now, since compat v9 does
+    that already.
+  * Update copyright:
+    - switch to copyright-format v1.0
+    - bump year for myself for the current one
+  * libqt4-ruby, libqt4-ruby1.8: for these transitional packages, set
+    section oldlibs and priority extra.
+  * Bump the smoke-dev-tools and libsmokeqt4-dev build dependencies
+    to >= 4:4.7.4.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 04 Apr 2012 10:38:51 +0200
+
 qtruby (4:4.7.1-1) unstable; urgency=low
 
   * Initial release, split from the kdebindings source.
