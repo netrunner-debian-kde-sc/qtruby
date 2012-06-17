@@ -1,6 +1,7 @@
-qtruby (4:4.8.4-1) UNRELEASED; urgency=low
+qtruby (4:4.8.4-1) unstable; urgency=low
 
   * New upstream release.
+    - bump smoke-dev-tools and libsmokeqt4 builddependencies
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 02 Mar 2012 15:31:10 -0500
 
