@@ -24,7 +24,7 @@ Description: internal library for Qt 4 Ruby bindings
 Package: libqtruby4shared-dev
 Section: libdevel
 Architecture: any
-Depends: ${so:Depends}, ${misc:Depends}, smoke-dev-tools (>= 4:4.9.2)
+Depends: ${so:Depends}, ${misc:Depends}, smoke-dev-tools (>= 4:4.10)
 Description: internal library for Qt 4 Ruby bindings -- development
  This package provides the development files of the internal Qt Ruby library.
  .
