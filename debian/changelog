@@ -1,8 +1,9 @@
-qtruby (4:4.10.2-2) UNRELEASED; urgency=low
+qtruby (4:4.10.3-1) UNRELEASED; urgency=low
 
   * Update watch file.
+  * New upstream release.
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 28 May 2013 20:38:38 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 28 May 2013 20:39:48 +0200
 
 qtruby (4:4.10.2-1) experimental; urgency=low
 
