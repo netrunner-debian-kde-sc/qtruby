@@ -2,7 +2,8 @@ Source: qtruby
 Section: ruby
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Torsten Marek <shlomme@debian.org>, Sune Vuorela <sune@debian.org>, David Palacio <dpalacio@orbitalibre.org>, Michael Meskes <meskes@debian.org>
+Uploaders: Torsten Marek <shlomme@debian.org>, Sune Vuorela <sune@debian.org>, David Palacio <dpalacio@orbitalibre.org>, Michael Meskes <meskes@debian.org>,
+           Maximiliano Curia <maxy@debian.org>
 Build-Depends: debhelper (>= 9), pkg-kde-tools (>= 0.6.8), cmake,
  smoke-dev-tools (>= 4:4.10), libsmokeqt4-dev (>= 4:4.10),
  ruby1.8, ruby1.8-dev,
