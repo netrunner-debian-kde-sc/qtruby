@@ -1,2 +1,2 @@
-usr/lib/ruby/1.8/qtuitools/qtuitools.rb
-usr/lib/ruby/1.8/*/qtuitools.so
+usr/lib/ruby/vendor_ruby/*/qtuitools/qtuitools.rb
+usr/lib/ruby/vendor_ruby/*/*/qtuitools.so

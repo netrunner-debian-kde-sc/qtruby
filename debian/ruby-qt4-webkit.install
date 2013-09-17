@@ -1,2 +1,2 @@
-usr/lib/ruby/1.8/qtwebkit/qtwebkit.rb
-usr/lib/ruby/1.8/*/qtwebkit.so
+usr/lib/ruby/vendor_ruby/*/qtwebkit/qtwebkit.rb
+usr/lib/ruby/vendor_ruby/*/*/qtwebkit.so

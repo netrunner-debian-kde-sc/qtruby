@@ -1,2 +1,2 @@
-usr/lib/ruby/1.8/qttest/qttest.rb
-usr/lib/ruby/1.8/*/qttest.so
+usr/lib/ruby/vendor_ruby/*/qttest/qttest.rb
+usr/lib/ruby/vendor_ruby/*/*/qttest.so

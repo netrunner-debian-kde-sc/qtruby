@@ -1,2 +1,2 @@
-usr/lib/ruby/1.8/qwt/qwt.rb
-usr/lib/ruby/1.8/*/qwt.so
+usr/lib/ruby/vendor_ruby/*/qwt/qwt.rb
+usr/lib/ruby/vendor_ruby/*/*/qwt.so

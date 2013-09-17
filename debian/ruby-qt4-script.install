@@ -1,2 +1,2 @@
-usr/lib/ruby/1.8/qtscript/qtscript.rb
-usr/lib/ruby/1.8/*/qtscript.so
+usr/lib/ruby/vendor_ruby/*/qtscript/qtscript.rb
+usr/lib/ruby/vendor_ruby/*/*/qtscript.so

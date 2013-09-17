@@ -3,12 +3,12 @@
 pkgs_lib := $(filter-out %-dev %-dbg,$(filter lib%,$(shell dh_listpackages)))
 current_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
 
-#Always use Ruby 1.8.x
-RUBY_SITEARCH := $(shell ruby1.8 -rrbconfig -e 'puts Config::CONFIG["sitearch"]')
+
+RUBY_VENDORARCHDIR := $(shell ruby -rrbconfig -e 'puts RbConfig::CONFIG["vendorarchdir"]')
+RUBY_VENDORLIBDIR := $(shell ruby -rrbconfig -e 'puts RbConfig::CONFIG["vendorlibdir"]')
 CMAKE_FLAGS := \
-  -DRUBY_EXECUTABLE=/usr/bin/ruby1.8 \
-  -DCUSTOM_RUBY_SITE_LIB_DIR=/usr/lib/ruby/1.8/ \
-  -DCUSTOM_RUBY_SITE_ARCH_DIR=/usr/lib/ruby/1.8/$(RUBY_SITEARCH) \
+  -DCUSTOM_RUBY_SITE_LIB_DIR=$(RUBY_VENDORLIBDIR) \
+  -DCUSTOM_RUBY_SITE_ARCH_DIR=$(RUBY_VENDORARCHDIR) \
   $(NULL)
 
 override_dh_install:
