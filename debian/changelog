@@ -3,6 +3,8 @@ qtruby (4:4.11.3-2) UNRELEASED; urgency=low
   * Build-conflict with ruby1.8 and build with ruby1.9.1.
   * Install files in Ruby vendor locations as per Ruby policy.
   * Drop use_ruby1.8.diff, since the default Ruby version is used now.
+  * Add myself to uploaders.
+  * Bump Standards-Version to 3.9.5 (no changes needed).
 
  -- Cédric Boutillier <boutil@debian.org>  Sun, 24 Nov 2013 00:12:01 +0100
 
