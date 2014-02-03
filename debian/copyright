@@ -18,7 +18,7 @@ License: BSD-3-clause
  2. Redistributions in binary form must reproduce the copyright
     notice, this list of conditions and the following disclaimer in the
     documentation and/or other materials provided with the distribution.
- 3. The name of the author may not be used to endorse or promote products 
+ 3. The name of the author may not be used to endorse or promote products
     derived from this software without specific prior written permission.
  .
  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
@@ -103,9 +103,9 @@ License:
       files under the ./missing directory.  See each file for the copying
       condition.
  .
-   5. The scripts and library files supplied as input to or produced as 
+   5. The scripts and library files supplied as input to or produced as
       output from the software do not automatically fall under the
-      copyright of the software, but belong to whomever generated them, 
+      copyright of the software, but belong to whomever generated them,
       and may be sold commercially, and may be aggregated with this
       software.
  .

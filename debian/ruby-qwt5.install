@@ -1,2 +1,2 @@
-usr/lib/ruby/vendor_ruby/*/qwt/qwt.rb
 usr/lib/ruby/vendor_ruby/*/*/qwt.so
+usr/lib/ruby/vendor_ruby/*/qwt/qwt.rb
