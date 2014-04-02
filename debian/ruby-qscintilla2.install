@@ -1,2 +1,2 @@
-usr/lib/ruby/vendor_ruby/*/*/qscintilla.so
+usr/lib/*/ruby/vendor_ruby/*/qscintilla.so
 usr/lib/ruby/vendor_ruby/*/qscintilla/qscintilla.rb

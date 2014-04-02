@@ -1,2 +1,2 @@
-usr/lib/ruby/vendor_ruby/*/*/qtuitools.so
+usr/lib/*/ruby/vendor_ruby/*/qtuitools.so
 usr/lib/ruby/vendor_ruby/*/qtuitools/qtuitools.rb

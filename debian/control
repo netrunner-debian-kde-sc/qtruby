@@ -17,8 +17,8 @@ Build-Depends: cmake,
                libqtwebkit-dev,
                libsmokeqt4-dev (>= 4:4.11),
                pkg-kde-tools (>= 0.6.8),
-               ruby1.9.1,
-               ruby1.9.1-dev,
+               ruby,
+               ruby-dev,
                smoke-dev-tools (>= 4:4.11)
 Standards-Version: 3.9.5
 Homepage: http://projects.kde.org/projects/kde/kdebindings/ruby/qtruby
@@ -54,7 +54,7 @@ Description: QScintilla2 bindings for the Ruby language
 Package: ruby-qt4
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Recommends: ruby1.9.1
+Recommends: ruby
 Provides: libqt4-ruby, libqt4-ruby1.8
 Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
 Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
@@ -83,7 +83,7 @@ Architecture: any
 Breaks: kdebindings-dbg
 Replaces: kdebindings-dbg
 Depends: ruby-qt4 (= ${binary:Version}), ${misc:Depends}
-Recommends: libruby1.9.1-dbg, libsmokeqt4-dbg
+Recommends: libsmokeqt4-dbg
 Description: Qt 4 bindings for the Ruby language -- debug symbols
  This package provides the debug symbols of the Qt 4 Ruby bindings.
  .

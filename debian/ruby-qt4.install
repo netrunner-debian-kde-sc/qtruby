@@ -1,6 +1,6 @@
 usr/bin/rbqtapi
 usr/bin/rbrcc
 usr/bin/rbuic4
-usr/lib/ruby/vendor_ruby/*/*/qtruby4.so
+usr/lib/*/ruby/vendor_ruby/*/qtruby4.so
 usr/lib/ruby/vendor_ruby/*/Qt*.rb
 usr/lib/ruby/vendor_ruby/*/Qt/*.rb

@@ -1,6 +1,7 @@
 qtruby (4:4.11.3-3) UNRELEASED; urgency=medium
 
   * Aesthetic changes made by wrap-and-sort.
+  * Build against ruby 2.0. (Closes: #739769)
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 03 Feb 2014 12:48:59 +0100
 

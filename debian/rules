@@ -4,9 +4,11 @@ pkgs_lib := $(filter-out %-dev %-dbg,$(filter lib%,$(shell dh_listpackages)))
 current_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
 
 
+RUBY_CONFIG_INCLUDE_DIR := $(shell ruby -rrbconfig -e 'puts RbConfig::CONFIG["rubyarchhdrdir"]')
 RUBY_VENDORARCHDIR := $(shell ruby -rrbconfig -e 'puts RbConfig::CONFIG["vendorarchdir"]')
 RUBY_VENDORLIBDIR := $(shell ruby -rrbconfig -e 'puts RbConfig::CONFIG["vendorlibdir"]')
 CMAKE_FLAGS := \
+  -DRUBY_CONFIG_INCLUDE_DIR=$(RUBY_CONFIG_INCLUDE_DIR) \
   -DCUSTOM_RUBY_SITE_LIB_DIR=$(RUBY_VENDORLIBDIR) \
   -DCUSTOM_RUBY_SITE_ARCH_DIR=$(RUBY_VENDORARCHDIR) \
   $(NULL)
