@@ -8,7 +8,6 @@ Uploaders: Torsten Marek <shlomme@debian.org>,
            Michael Meskes <meskes@debian.org>,
            Maximiliano Curia <maxy@debian.org>,
            Cédric Boutillier <boutil@debian.org>
-Build-Conflicts: libruby1.8
 Build-Depends: cmake,
                debhelper (>= 9),
                libphonon-dev,
@@ -29,6 +28,7 @@ Package: libqtruby4shared2
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: ruby-soprano (<< 4:4.11.3-4~), ruby-kde4 (<< 4:4.11.3-4~)
 Description: internal library for Qt 4 Ruby bindings
  This package provides an internal library of Qt Ruby.
  .
