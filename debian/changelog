@@ -1,3 +1,13 @@
+qtruby (4:4.11.3-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload with maintainer approval.
+  * ruby-qt4.postinst: Clean up obsolete diversions of rbqtapi dating back to
+    libqt4-ruby1.8/lenny.  (Closes: #775894)
+  * Allow arch-indep-only builds by restricting the dh_installexamples
+    override to arch-specific builds.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 25 Jan 2015 12:43:54 +0100
+
 qtruby (4:4.11.3-4) unstable; urgency=medium
 
   * Build against Ruby 2.1.
