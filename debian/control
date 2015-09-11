@@ -13,13 +13,13 @@ Build-Depends: cmake,
                libphonon-dev,
                libqscintilla2-dev,
                libqt4-dev,
-               libqtwebkit-dev,
                libsmokeqt4-dev (>= 4:4.11),
                pkg-kde-tools (>= 0.6.8),
                ruby,
                ruby-dev,
                smoke-dev-tools (>= 4:4.11)
-Standards-Version: 3.9.5
+Build-Conflicts: libqtwebkit-dev
+Standards-Version: 3.9.6
 Homepage: http://projects.kde.org/projects/kde/kdebindings/ruby/qtruby
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/qtruby.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/qtruby.git;a=summary
@@ -129,16 +129,16 @@ Description: QtUiTools bindings for the Ruby language
  .
  This is part of the Qt Ruby module.
 
-Package: ruby-qt4-webkit
-Architecture: any
-Depends: ruby-qt4 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
-Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
-Description: QtWebKit bindings for the Ruby language
- This package provides the Ruby bindings for the QtWebKit Qt 4 library.
- .
- This is part of the Qt Ruby module.
-
+#Package: ruby-qt4-webkit
+#Architecture: any
+#Depends: ruby-qt4 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+#Breaks: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
+#Replaces: libqt4-ruby (<< 4:4.6.80), libqt4-ruby1.8 (<< 4:4.6.80)
+#Description: QtWebKit bindings for the Ruby language
+# This package provides the Ruby bindings for the QtWebKit Qt 4 library.
+# .
+# This is part of the Qt Ruby module.
+#
 Package: libqt4-ruby
 Architecture: all
 Section: oldlibs
@@ -147,18 +147,18 @@ Depends: ruby-qt4, ${misc:Depends}
 Description: transitional package for ruby-qt4
  This is a transitional package to ease upgrades to the ruby-qt4 package.
  It can safely be removed.
-
-Package: libqt4-ruby1.8
-Architecture: all
-Section: oldlibs
-Priority: extra
-Depends: ruby-phonon,
-         ruby-qt4,
-         ruby-qt4-script,
-         ruby-qt4-test,
-         ruby-qt4-uitools,
-         ruby-qt4-webkit,
-         ${misc:Depends}
-Description: transitional package for ruby-qt4
- This is a transitional package to ease upgrades to the ruby-qt4 package.
- It can safely be removed.
+#
+#Package: libqt4-ruby1.8
+#Architecture: all
+#Section: oldlibs
+#Priority: extra
+#Depends: ruby-phonon,
+#         ruby-qt4,
+#         ruby-qt4-script,
+#         ruby-qt4-test,
+#         ruby-qt4-uitools,
+#         ruby-qt4-webkit,
+#         ${misc:Depends}
+#Description: transitional package for ruby-qt4
+# This is a transitional package to ease upgrades to the ruby-qt4 package.
+# It can safely be removed.

@@ -1,3 +1,16 @@
+qtruby (4:4.14.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * Update debian/watch
+  * Bump standards version to 3.9.6
+  * Drop ruby-qt4-webkit binary and libqtwebkit-dev build-depends in aid of
+    Qt4 WebKit removal goal (Closes: #784517)
+    - Build-Conflict libqtwebkit-dev just to be sure
+  * Drop obsolete libqt4-ruby1.8 transitional package
+
+ -- Scott Kitterman <scott@kitterman.com>  Thu, 10 Sep 2015 15:25:44 -0400
+
 qtruby (4:4.11.3-4.1) unstable; urgency=medium
 
   * Non-maintainer upload with maintainer approval.
